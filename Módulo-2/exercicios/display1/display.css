@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: gray;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#d1:hover {
+    background-color: yellow;
+}
+
+#d2:hover {
+    background-color: rgb(110, 163, 109);
+}
+
+#d3:hover {
+    background-color: rgb(185, 93, 27);
+}

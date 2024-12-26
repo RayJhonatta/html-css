@@ -1,0 +1,14 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+     font-style: italic;   
+}
+
+p {
+    font-weight: bold;  
+    text-decoration: underline;
+    text-align: justify;
+    /* font: italic bold 12px Arial, Helvetica, sans-serif; */
+}

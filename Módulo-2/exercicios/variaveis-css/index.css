@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+:root {
+
+    --estilo: Arial, Helvetica, sans-serif;
+
+    --text-shadow: 1px 1px 2px white;
+    --font-size: 42px;
+
+    --cor-principal: rgb(182, 182, 108); 
+    --cor-titulo: rgb(185, 81, 81);
+    --cor-sub-titulo: rgb(87, 87, 163);
+    --cor-paragrafo: rgb(249, 249, 249);
+}
+
+
+body {
+   background-color: var(--cor-principal);
+   font-family: var(--estilo);
+}
+
+header > h1 {
+    font-size: var(--font-size);
+    color: var(--cor-titulo);
+    text-shadow: var(--text-shadow);
+}
+
+main > h2 {
+    color: var(--cor-sub-titulo);
+    text-shadow: var(--text-shadow)
+}
+
+p {
+    color: var(--cor-paragrafo);
+    text-shadow: 1px 1px 2px black;
+}

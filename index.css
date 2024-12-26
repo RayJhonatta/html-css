@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+:root {
+    --cor-principal: rgba(255, 0, 0, 0.535);
+    --borda: 50px solid black;
+}
+ 
+body {
+    background-color: var(--cor-principal);
+}
+
+#unica {
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    outline: green solid 5px;
+    border-radius: 10px;
+    border: var(--borda);
+} 
+
+#unica > h1 {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.varios {
+    background-color: aqua;
+    box-shadow: 0px 0px 5px black;
+}
+
+.varios > h1 {
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.varios > h1:hover {
+    background-color: blue;
+    transition-duration: 1.4s;
+    text-decoration: none;
+}   
+
+p {
+    line-height: 37px;
+    font: italic bolder 20px arial;
+    text-align: justify;
+    text-shadow: 1px 1px 2px white;
+    text-indent: 40px;
+}
+
+p:active {
+    color: red;
+}
+
+p:visited {
+    background-color: orange;
+}
+
+#escondido {
+
+}
