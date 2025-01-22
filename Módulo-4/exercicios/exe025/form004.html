@@ -5,63 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: orange;
+       }
 
-        form > input {
-           display: block;
-           padding: 10px;
-        }
+       form {
+        background-color: white;
+        height: 600px;
+        width: 850px;
+        margin: auto;
+        border-radius: 10px;
+       }
 
-        .botao {
-           display: inline-block;
-           margin-top: 20px;
-        }
+       form > h1 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 2.3em;
+       }
+
+       form > h2 {
+        text-align: center;
+       }
+
+       .campo {
+        height: 50px;
+        width: 190px;
+       }
+       
+       .botao {
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+       }
     </style>
 </head>
 <body>
-    <h1>Exercício sobre Formulário</h1>
-    <form action="cadatro.php" autocomplete="on" method="post">
+    <form action="cadatro.php" method="post" autocomplete="on">
+        <h1>Formulário</h1>
+        <h2>Responda esse Formulário!!</h2>
         <fieldset>
             <legend>Dados Pessoais:</legend>
-            <label for="i-nome">Nome:</label>
-                <input type="text" name="nome" id="i-nome" required autocomplete="username" placeholder="Digite o seu Nome">
-            <label for="i-sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="i-sobrenome" required autocomplete="username" placeholder="Digite seu Sobrenome">
-            <label for="i-email">E-mail:</label>
-                <input type="email" name="email" id="i-email" required autocomplete="email" placeholder="Digite seu E-mail">
-            <label for="i-senha">Senha:</label>
-                <input type="password" name="senha" id="i-senha" required autocomplete="new-password" placeholder="Digite sua Senha"  minlength="5" maxlength="10">
-            <label for="i-sexo-feminino">Sexo:</label>
-               <input type="radio" name="sexo" id="i-sexo-masculino" value="M"> Masculino
-               <input type="radio" name="sexo" id="-sexo-feminino" value="F"> Feminino
-            <label for="i-data-de-nascimento">Data de Nascimento:</label>
-                <input type="date" name="data-de-nascimento" id="i-data-de-nascimento" required autocomplete="bday" placeholder="Digite sua Data de Nascimento">
-            <label for="i-horario">Horário:</label>
-                <input type="time" name="horario" id="i-horario" required autocomplete="off" placeholder="Digite um Horário">
-            <label for="i-idade">Idade:</label>
-                <input type="number" name="idade" id="i-idade" required autocomplete="off">
-                <label for="i-estado">Estado:</label>
-                <select name="estado" id="i-estado">
-                    <optgroup label="Região Sudeste"> 
-                        <option value="MG">Minas Gerais</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="SP">São Paulo</option>
-                    </optgroup>
-                    <optgroup label="Região Nordeste">
-                        <option value="AL">Alagoas</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="SALV">Salvador</option>
-                    </optgroup>
-                </select>
-                <label for="i-color">Cor Favorita:</label>
-                <input type="color" name="cor" id="i-color">
-                <label for="i-telefone">Telefone:</label>
-                <input type="tel" name="telefone" id="i-telefone" pattern="^\+(\d{1,3}) \(\d{2}\) \d{4,5}-\d{4}$">
-                <label for="i-mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="i-mensagem" cols="30" rows="10"></textarea>
+            <label for="i-nome">Nome:</label> <br>
+            <input type="text" name="nome" id="i-nome" autocomplete="name" required placeholder="Digite Seu Nome" class="campo"> <br>
+            <label for="i-idade">Idade:</label> <br>
+            <input type="number" name="idade" id="i-idade" required placeholder="Digite Sua Idade" class="campo"> <br>
+            <label for="">Sexo:</label> <br>
+            <input type="radio" name="sexo" id="i-masculino">Masculino <br>
+            <input type="radio" name="sexo" id="i-feminino"> Feminino <br>
+            <label for="i-data-nascimento">Data de Nascimento:</label> <br>
+            <input type="date" name="data-nascimento" id="i-data-nascimento" class="campo"> <br>
+            <label for="i-estados">Estado:</label> <br>
+            <input list="estado" name="estado" id="i-estados" class="campo"> <br>
+            <datalist id="estado"> <br> 
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RS">Rio Grande do Sul</option>
+
+                    <option value="AL">Alagoas</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="SAL">Salvador</option>
+                    <option value="CEA">Ceará</option>
+            </datalist>
         </fieldset>
         <input type="submit" value="Enviar" class="botao">
         <input type="reset" value="Limpar" class="botao">
