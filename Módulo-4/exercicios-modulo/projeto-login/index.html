@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+           <!--- AQUI VAI APARECER UMA IMAGEM-->
+            </div>
+            <div id="formulario">
+               <h1>Login</h1>
+               <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+               <form action="cadastro.php" method="post">
+                  <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="Elogin" placeholder="Digite seu E-mail" autocomplete="email" required class="input">
+                        <label for="Elogin">Login:</label>
+                </div>
+                <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="Esenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="12" class="input">
+                        <label for="Esenha">Senha:</label>
+                </div>
+               </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
