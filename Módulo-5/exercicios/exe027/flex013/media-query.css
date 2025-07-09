@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > #burquer {
+    display: block;
+    cursor: pointer;
+}
+
+header > nav {
+    display: none;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+

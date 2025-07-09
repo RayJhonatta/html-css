@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css" media="screen and (max-width: 580px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Menu Flexbox</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burquer" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis placeat dolorem molestiae necessitatibus molestias. Facere, nemo vel. Neque minima dolores sint alias vel, ab vero quidem, tempore quis blanditiis corrupti! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo incidunt nostrum eveniet odit blanditiis voluptatem voluptatum officia laboriosam ducimus tempore vitae, provident tempora cumque quas accusantium aspernatur eum impedit? Officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eius quisquam qui fugit, perspiciatis voluptas quos ea eum ducimus? Doloremque quis iste nulla, fuga obcaecati laboriosam voluptates cum hic deserunt?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, sint? Mollitia quisquam quam sunt, cumque odit culpa harum sed, quo hic ratione, veniam eveniet ullam! Ex omnis amet architecto. Asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis facilis, repellat ipsa culpa voluptate neque quis, provident aperiam sequi necessitatibus et dicta explicabo magnam odit iste, deleniti perspiciatis molestias incidunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, aspernatur est dolor explicabo impedit, beatae quibusdam odit recusandae, ipsam fugiat placeat quasi esse nemo non? Esse perspiciatis doloremque nihil temporibus!</p>
+    </main>
+    <script>
+        function menuClick() {
+            const nav = document.querySelector('header > nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+        }
+    }
+    </script>
+</body>
+</html>
