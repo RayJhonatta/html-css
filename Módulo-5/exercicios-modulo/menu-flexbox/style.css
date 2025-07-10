@@ -29,6 +29,22 @@ header > h1 {
     text-shadow: 2px 2px 0px rgb(0, 0, 0, 0.404);
 }
 
+header > #burquer {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: none;
+    padding: 5px;
+    cursor: pointer;
+    width: 95vw;
+    border-radius: 5px;
+}
+
+header > #burquer:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
+
 header > nav {
     display: flex;
     flex-flow: row wrap;
